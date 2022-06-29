@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".GoalsPage">
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="90dp"
+       android:layout_height="wrap_content"
+       android:text="Goals"
+       android:textSize="34sp"
+       android:layout_marginLeft="165dp"/>
+
+   <ListView
+       android:id="@+id/progress_list"
+       android:layout_width="match_parent"
+       android:layout_height="450dp"
+       android:layout_marginTop="10dp"
+       tools:context=".GoalsPage" />
+
+   <EditText
+       android:id="@+id/GoalDescription"
+       android:layout_width="324dp"
+       android:layout_height="53dp"
+       android:layout_marginStart="55dp"
+       android:layout_marginTop="20dp"
+       android:textAlignment="center"
+       android:textColor="@color/black"
+       android:textSize="16sp"
+       tools:text="Describe Goal Here " />
+
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="85dp"
+       android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/txtGoalLimit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="55dp"
+          android:layout_marginTop="30dp"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          tools:text="Add Goal Amount" />
+
+      <Spinner
+          android:id="@+id/spnCateGory"
+          android:layout_width="153dp"
+          android:layout_height="43dp"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="30dp" />
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/btnAddGoal"
+       android:layout_width="129dp"
+       android:layout_height="50dp"
+       android:layout_marginStart="145dp"
+       android:onClick="addGoal"
+       android:inputType="number"
+       tools:text="Add Goal" />
+
+
+</LinearLayout>
+
+
